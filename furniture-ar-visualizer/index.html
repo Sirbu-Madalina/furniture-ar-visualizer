@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nord Form — Chair Experience</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">NordForm</div>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#experience">Experience it</a>
+        <a href="#buy">Buy now</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <p class="tag">Modern comfort chair</p>
+        <h1>Experience comfort in 3D</h1>
+
+        <p class="description">
+          Explore a premium lounge chair, customize its ambiance, and preview it
+          in your own space using augmented reality.
+        </p>
+
+        <div class="buttons">
+          <button class="btn primary">Explore features</button>
+          <button class="btn outline" id="arBtn">View in AR</button>
+        </div>
+
+        <div class="ambiance-switcher">
+          <span class="ambiance-label">Ambiance</span>
+          <div class="ambiance-buttons">
+            <button class="ambiance-btn active" data-ambiance="neutral">
+              Neutral
+            </button>
+            <button class="ambiance-btn" data-ambiance="warm">Warm</button>
+            <button class="ambiance-btn" data-ambiance="dark">Dark</button>
+            <button class="ambiance-btn" id="resetViewBtn">Reset view</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <canvas id="scene"></canvas>
+      </div>
+    </section>
+
+    <div class="scroll">Scroll to explore ↓</div>
+
+    <section id="experience" class="experience">
+      <h2>Product Experience</h2>
+      <p>3D viewer, ambiance controls, and AR will go here.</p>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
