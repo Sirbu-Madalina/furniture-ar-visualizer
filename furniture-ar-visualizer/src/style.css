@@ -171,12 +171,6 @@ canvas {
   z-index: 5;
 }
 
-/* EXPERIENCE */
-.experience {
-  min-height: 100vh;
-  padding: 80px 60px;
-}
-
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .hero {
@@ -226,10 +220,6 @@ canvas {
   margin-bottom: 20px;
 }
 
-.ar-viewer-wrapper {
-  width: 65%;
-}
-
 .ar-launch-btn {
   margin: 16px;
 }
@@ -247,4 +237,49 @@ canvas {
   .ar-text h2 {
     font-size: 36px;
   }
+}
+
+.ar-viewer-wrapper {
+  width: 65%;
+  padding: 24px;
+  border-radius: 32px;
+  background: #f1f1f1;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.material-switcher {
+  margin-top: 24px;
+}
+
+.material-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.material-btn {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #d0d0d0;
+  background: #fff;
+  color: #111;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.material-btn:hover {
+  border-color: #111;
+}
+
+.material-btn.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.ar-note {
+  margin-top: 12px;
+  color: #777;
+  font-size: 14px;
 }
