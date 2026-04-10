@@ -119,7 +119,9 @@ document.getElementById("resetViewBtn").addEventListener("click", () => {
 });
 
 document.getElementById("arBtn").addEventListener("click", () => {
-  alert("AR view coming next");
+  document.getElementById("ar-section").scrollIntoView({
+    behavior: "smooth",
+  });
 });
 
 function animate() {

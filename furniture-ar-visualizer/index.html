@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,6 +15,11 @@
         <a href="#experience">Experience it</a>
         <a href="#buy">Buy now</a>
       </nav>
+
+      <script
+        type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+      ></script>
     </header>
 
     <section class="hero">
@@ -49,6 +54,37 @@
         <canvas id="scene"></canvas>
       </div>
     </section>
+
+    <section id="ar-section" class="ar-section">
+  <div class="ar-content">
+    <div class="ar-text">
+      <p class="tag">Augmented reality preview</p>
+      <h2>See it in your space</h2>
+      <p class="description">
+        Use your phone to preview the chair in your own room and get a better
+        sense of size, placement, and atmosphere.
+      </p>
+    </div>
+
+    <div class="ar-viewer-wrapper">
+      <model-viewer
+        src="/models/chair.glb"
+        alt="3D chair model in AR"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        style="width: 100%; height: 500px; background: #f1f1f1; border-radius: 24px;"
+      >
+        <button slot="ar-button" class="btn primary ar-launch-btn">
+          Launch AR
+        </button>
+      </model-viewer>
+    </div>
+  </div>
+</section>
 
     <div class="scroll">Scroll to explore ↓</div>
 

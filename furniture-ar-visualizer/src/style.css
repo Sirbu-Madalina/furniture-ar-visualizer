@@ -203,3 +203,48 @@ canvas {
     padding: 20px 24px;
   }
 }
+
+.ar-section {
+  min-height: 100vh;
+  padding: 100px 60px;
+  background: #faf8f5;
+}
+
+.ar-content {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.ar-text {
+  width: 35%;
+}
+
+.ar-text h2 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.ar-viewer-wrapper {
+  width: 65%;
+}
+
+.ar-launch-btn {
+  margin: 16px;
+}
+
+@media (max-width: 1024px) {
+  .ar-content {
+    flex-direction: column;
+  }
+
+  .ar-text,
+  .ar-viewer-wrapper {
+    width: 100%;
+  }
+
+  .ar-text h2 {
+    font-size: 36px;
+  }
+}
